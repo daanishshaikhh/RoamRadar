@@ -1,0 +1,55 @@
+<!-- Main -->
+<main>
+
+  <!-- Welcome -->
+  <section class="sec-welcome">
+    <div class="div-welcome-text">
+      <p class="welcome-heading">Ready to plan your next trip?</p>
+      <p class="welcome-body">
+        Trip Planner provides a quick way to document all the things you want to see and do, while instantly creating
+        an itinerary you can easily rearrange.
+      </p>
+    </div>
+    <div class="div-welcome-img"></div>
+  </section>
+
+  <!-- Sign up or log in -->
+  <section class="sec-signup-login">
+
+    <!-- Sign up -->
+    <p class="signup-cta">Sign up and get planning</p>
+    <form class="form" action="/auth/signup" method="post">
+
+      <label for="signup-first-name">First Name</label>
+      <input id="signup-first-name" type="text" name="firstName" />
+
+      <label for="signup-last-name">Last Name</label>
+      <input id="signup-last-name" type="text" name="lastName" />
+
+      <label for="signup-email">Email</label>
+      <input id="signup-email" type="email" name="email" />
+
+      <label for="signup-password">Password</label>
+      <input id="signup-password" type="password" name="password" />
+
+      <input class="button button2" type="submit" value="Sign Up" />
+
+    </form>
+
+    <!-- Log in -->
+    <form class="form" action="/auth/login" method="post">
+
+      <label for="login-email">Email</label>
+      <input id="login-email" type="email" name="email" />
+
+      <label for="login-password">Password</label>
+      <input id="login-password" type="password" name="password" />
+
+      <input class="button button2" type="submit" value="Log In" />
+
+    </form>
+    <p class="login-cta">Or log in here</p>
+
+  </section>
+
+</main>

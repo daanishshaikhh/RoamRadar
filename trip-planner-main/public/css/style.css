@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap');
+
+/* Global */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #242424;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+}
+
+.page-container {
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fcfbff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Forms */
+
+.form {
+  padding: 20px;
+  border: solid 5px #d7dfde;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+
+.button {
+  width: 150px;
+  height: 38px;
+  padding: 5px;
+  border-style: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #2c4c4c;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button2 {
+  margin-top: 30px;
+}
+
+.button3 {
+  margin-left: 20px;
+}
+
+.button4 {
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.button5 {
+  width: 60px;
+  height: 25px;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.save {
+  margin-bottom: 0;
+  background-color: #e36d3c;
+}
+
+/* Header and primary navigation */
+
+.div-alert {
+  width: 100%;
+  padding: 10px;
+  background-color: #d7dfde;
+  font-size: 14px;
+  text-align: center;
+}
+
+header {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-index {
+  color: #2c4c4c;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+nav li {
+  margin-left: 60px;
+  display: inline-block;
+}
+
+.link-dashboard {
+  font-weight: 700;
+}
+
+/* Index page */
+
+.sec-welcome {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+.div-welcome-text {
+  position: absolute;
+  top: 50px;
+  width: 500px;
+  height: 400px;
+  padding: 35px 60px;
+  background-color: #2c4c4c;
+}
+
+.welcome-heading {
+  margin-bottom: 30px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.welcome-body {
+  color: #dcdcdc;
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+.div-welcome-img {
+  float: right;
+  width: 80%;
+  height: 100%;
+  background-image: url('../img/hero-image.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.sec-signup-login {
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 180px 300px 300px 180px 1fr;
+  gap: 40px;
+}
+
+.signup-cta,
+.login-cta {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.signup-cta {
+  grid-column-start: 2;
+  text-align: right;
+}
+
+/* Dashboard page */
+
+.sec-subheader {
+  padding: 20px 60px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c4c4c;
+}
+
+.main-dashboard {
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.instructions {
+  padding-top: 10px;
+}
+
+.instructions li {
+  color: #dcdcdc;
+  font-size: 13px;
+  line-height: 1.8em;
+  list-style-position: inside;
+}
+
+.div-trip {
+  padding: 20px 20px 40px 20px;
+  border-radius: 8px 0 0 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #2c4c4c;
+}
+
+h3 {
+  padding-bottom: 10px;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.dates {
+  color: #e2ab82;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Trip page */
+
+/* Add/edit segment popup */
+
+.form-add-edit-segment {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 400px;
+  margin: -335px 0 0 -200px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  background-color: white;
+}
+
+.div-radio-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-radio-buttons div {
+  text-align: center;
+}
+
+.div-form-buttons {
+  float: right;
+}
+
+.div-fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.4;
+}
+
+/* Subheader and trip forms */
+
+.subheader-links li {
+  margin-left: 30px;
+  display: inline-block;
+  color: #d7dfde;
+  cursor: pointer;
+}
+
+.sec-trip-forms {
+  padding: 0 60px 20px 60px;
+}
+
+.form-edit-trip {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 150px;
+  column-gap: 20px;
+  align-items: end;
+}
+
+.form-delete-trip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Schedule */
+
+.sec-schedule {
+  padding: 10px 20px 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+  align-items: stretch;
+}
+
+.div-day {
+  padding: 20px 20px 0 20px;
+  border-radius: 8px;
+  background-color: #dcdcdc;
+}
+
+.div-day-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-day-header .dates {
+  color: #2c4c4c;
+}
+
+.div-day-buttons {
+  display: inline-flex;
+}
+
+.div-day-main {
+  position: relative;
+}
+
+.div-segment {
+  position: absolute;
+  width: 100%;
+  height: 220px;
+}
+
+.div-segment-box {
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: #d7dfde;
+}
+
+.div-info-primary {
+  height: 70px;
+  padding: 10px 15px 8px 15px;
+  border-radius: 8px 8px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 20px;
+  align-items: center;
+  background-color: #2c4c4c;
+  overflow: auto;
+}
+
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+}
+
+h5 {
+  color: #dcdcdc;
+  font-size: 16px;
+}
+
+.div-info-primary img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.div-info-secondary {
+  height: 120px;
+  padding: 12px 15px;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  gap: 10px;
+}
+
+.div-info-secondary p,
+.div-info-secondary a,
+.div-info-secondary strong,
+.div-info-secondary span {
+  font-size: 13px;
+}

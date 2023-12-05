@@ -1,0 +1,54 @@
+<!-- Subheader -->
+<section class="sec-subheader">
+  <div>
+    <h1><%= user.firstName %>'s Dashboard</h1>
+    <ul class="instructions">
+      <li>You'll find a list of all your trips here on the dashboard.</li>
+      <li>To add a new trip, provide a name and your travel dates below.</li>
+      <li>Click on an existing trip to start or continue your planning.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Main -->
+<main class="main-dashboard">
+
+  <!-- Add a trip -->
+  <section>
+    <h2>Add a Trip</h2>
+    <form class="form" action="/trips" method="post">
+
+      <label for="add-trip-name">Name</label>
+      <input id="add-trip-name" type="text" name="name" />
+
+      <label for="add-trip-start-date">Start Date</label>
+      <input id="add-trip-start-date" type="date" name="startDate" />
+
+      <label for="add-trip-end-date">End Date</label>
+      <input id="add-trip-end-date" type="date" name="endDate" />
+
+      <input class="button button2" type="submit" value="Add" />
+
+    </form>
+  </section>
+
+  <!-- Trips -->
+  <% if (trips.length) { %>
+  <section>
+    <h2>Trips</h2>
+    <% trips.forEach((trip) => { %>
+    <a href="/trips/<%= trip.id %>">
+      <div class="div-trip">
+        <h3><%= trip.name %></h3>
+        <% let startDate = new Date(trip.startDate) %>
+        <% startDate = `${startDate.getUTCMonth() + 1}.${startDate.getUTCDate()}` %>
+        <% let endDate = new Date(trip.endDate) %>
+        <% endDate = `${endDate.getUTCMonth() + 1}.${endDate.getUTCDate()}` %>
+        <p class="dates"><%= startDate %> – <%= endDate %></p>
+      </div>
+    </a>
+    <% }); %>
+  </section>
+  <% } %>
+
+</main>
