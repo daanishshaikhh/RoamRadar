@@ -1,6 +1,6 @@
 # RoamRadar
 
-> ![Image](reference/img/hero.png)
+> ![Image](trip-planner-main/reference/img/hero.png)
 
 ### An app for creating quick, easy-to-edit itineraries
 
@@ -16,7 +16,7 @@ RoamRadar is a full-stack app, built primarily using Node, Express.js and Sequel
 
 As a Node/Express app, RoamRadar takes advantage of the node package `express-ejs-layouts` to handle the app's various layouts and controllers. Routes are overseen by two controllers: `auth.js`, which handles user authorization, and `trips.js`, which handles client requests, as well as requests to the database. The app consists of three primary pages, or views, which include `index.ejs`, `dashboard.ejs` and `trips.ejs`. Interactivty is managed by several scripts: `app.js` handles events and event listeners, `drag-drop.js` provides drag-and-drop functionality and `api.js` configures the Google Places API and initializes its autocomplete feature.
 
-In addition to the inclusion of the Google Places API, I pulled from the GSAP library ([GreenSock](https://greensock.com/gsap/)) to create the app's drag-and-drop feature.
+In addition to the inclusion of the Google Places API, we pulled from the GSAP library ([GreenSock](https://greensock.com/gsap/)) to create the app's drag-and-drop feature.
 
 ---
 
@@ -26,9 +26,9 @@ Initial planning for the app consisted of three elements: wireframes, user stori
 
 ### Wireframes
 
-![ERD](reference/img/dashboard-01-default-desktop.png)
-![ERD](reference/img/trip-01-default-desktop.png)
-![ERD](reference/img/trip-02-default-desktop.png)
+![ERD](trip-planner-main/reference/img/dashboard-01-default-desktop.png)
+![ERD](trip-planner-main/reference/img/trip-01-default-desktop.png)
+![ERD](trip-planner-main/reference/img/trip-02-default-desktop.png)
 
 ### User Stories
 
