@@ -1,20 +1,20 @@
-# Trip Planner
+# RoamRadar
 
 > ![Image](reference/img/hero.png)
 
 ### An app for creating quick, easy-to-edit itineraries
 
-Trip Planner is a product of my own passion for travel prep. As soon as I make the decision to travel somewhere, I start a list of things I want to see and do when I arrive. This list is based on recommendations I receive from friends, guide books and other sources, like the internet, and it usually ends up in a spreadsheet. As the list evolves, I clumsily copy and paste items from one cell to another, in an attempt to organize the content I collected and build some resemblance of an itinerary. While I enjoy putting these travel mood boards/schedules together, doing so sucks up a lot of time, and I always felt like should be a better tool to use than a basic spreadsheet.
+RoamRadar is a product of our own passion for travel prep. As soon as we make the decision to travel somewhere, we start a list of things we want to see and do when we arrive. This list is based on recommendations we receive from friends, guide books and other sources, like the internet, and it usually ends up in a spreadsheet. As the list evolves, we clumsily copy and paste items from one cell to another, in an attempt to organize the content we collected and build some resemblance of an itinerary. While we enjoy putting these travel mood boards/schedules together, doing so sucks up a lot of time, and we always felt like should be a better tool to use than a basic spreadsheet.
 
-That's where Trip Planner comes in. It's a straight-forward app that allows users to create an account, add trips to it, then fill those trips with all the recommendations they collect. The app does more than store information, though. It also gives users the ability to group recommendations by day, then easily reorder them, providing users with an instant itinerary. As more recommendations, or "segments", are added, users can continue to drag them around, until the optimal itinerary is crafted.
+That's where RoamRadar comes in. It's a straight-forward app that allows users to create an account, add trips to it, then fill those trips with all the recommendations they collect. The app does more than store information, though. It also gives users the ability to group recommendations by day, then easily reorder them, providing users with an instant itinerary. As more recommendations, or "segments", are added, users can continue to drag them around, until the optimal itinerary is crafted.
 
 ---
 
 ## Technology Used
 
-Trip Planner is a full-stack app, built primarily using Node, Express.js and Sequelize. Utilized languages include HTML, CSS, JavaScript, EJS and SQL.
+RoamRadar is a full-stack app, built primarily using Node, Express.js and Sequelize. Utilized languages include HTML, CSS, JavaScript, EJS and SQL.
 
-As a Node/Express app, Trip Planner takes advantage of the node package `express-ejs-layouts` to handle the app's various layouts and controllers. Routes are overseen by two controllers: `auth.js`, which handles user authorization, and `trips.js`, which handles client requests, as well as requests to the database. The app consists of three primary pages, or views, which include `index.ejs`, `dashboard.ejs` and `trips.ejs`. Interactivty is managed by several scripts: `app.js` handles events and event listeners, `drag-drop.js` provides drag-and-drop functionality and `api.js` configures the Google Places API and initializes its autocomplete feature.
+As a Node/Express app, RoamRadar takes advantage of the node package `express-ejs-layouts` to handle the app's various layouts and controllers. Routes are overseen by two controllers: `auth.js`, which handles user authorization, and `trips.js`, which handles client requests, as well as requests to the database. The app consists of three primary pages, or views, which include `index.ejs`, `dashboard.ejs` and `trips.ejs`. Interactivty is managed by several scripts: `app.js` handles events and event listeners, `drag-drop.js` provides drag-and-drop functionality and `api.js` configures the Google Places API and initializes its autocomplete feature.
 
 In addition to the inclusion of the Google Places API, I pulled from the GSAP library ([GreenSock](https://greensock.com/gsap/)) to create the app's drag-and-drop feature.
 
@@ -32,7 +32,7 @@ Initial planning for the app consisted of three elements: wireframes, user stori
 
 ### User Stories
 
-In developing user stories for the app, I focused on three central questions: who, specifically, are the users, what can the app provide to them and why would they consider using the app?
+In developing user stories for the app, we focused on three central questions: who, specifically, are the users, what can the app provide to them and why would they consider using the app?
 
 - Who: travelers—organized and disorganized alike—who enjoy planning their trips in advance, and/or prefer some certainty in their itinerary.
 - What: an easy way to record potential trip plans—dinner at a restaurant, for example—and see whether they fit into a manageable schedule.
@@ -40,7 +40,7 @@ In developing user stories for the app, I focused on three central questions: wh
 
 ### ERD
 
-While most of the tables store data necessary to the app's functionality, the categories table is currently not being utilized. A future development goal of mine is to add a feature where trip segments automatically change color depending on what category they fall under. For example, all of the dining related segments could be red, while all of the lodging segments could be blue. In order to achieve that, each segment needs to be assigned a category, and since segments are currently assigned a more specific subcategory, this could be accomplished by joining the category table to the subcategory table. This is why I decided to keep the categories table as part of the ERD.
+While most of the tables store data necessary to the app's functionality, the categories table is currently not being utilized. A future development goal of mine is to add a feature where trip segments automatically change color depending on what category they fall under. For example, all of the dining related segments could be red, while all of the lodging segments could be blue. In order to achieve that, each segment needs to be assigned a category, and since segments are currently assigned a more specific subcategory, this could be accomplished by joining the category table to the subcategory table. This is why we decided to keep the categories table as part of the ERD.
 
 ![ERD](reference/img/trip-planner-erd.png)
 
@@ -53,7 +53,7 @@ Here are instructions for installing the app on your local machine.
 1. Clone the copy to your local machine.
 
 ```
-git clone https://github.com/delayedaa/trip-planner
+git clone https://github.com/daanishshaikhh/RoamRadar
 ```
 
 2. Install the required dependencies.
